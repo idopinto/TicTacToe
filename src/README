@@ -1,0 +1,34 @@
+idopinto12
+206483620
+
+# whatever strategy #
+I choose to implement 'WhateverPlayer'
+such that every turn (iteratively until success) he randomly choose  coordinates in the board
+and tries to mark those coordinates.
+
+# clever strategy #
+I choose to implement 'CleverPlayer'
+such that every turn (iteratively until success) she goes row by row and try to mark cells.
+so that most of the times she will win the player that plays randomly.
+
+# snartypamets strategy #
+
+I choose to implement 'SnartyPametsPlayer'
+such that every turn (iteratively until success) he know that ms.clever goes row by row.
+so he will try to overcome her by going column by column and moreover start from the middle his searching for available cells .
+so that most of the times he will win the clever strategy.
+
+/* Tournaments */
+ -- 500 rounds --
+clever vs. whatever
+    |Player 1-> 278 |Player 2-> 102 |Draw -> 120 |
+
+snartypamets vs. clever
+    |Player 1-> 500 |Player 2-> 0 |Draw -> 0 |
+
+whatever vs. snartypamets.
+    |Player 1-> 34 |Player 2-> 394 |Draw -> 72 |
+
+-- 10000 rounds --
+whatever vs. whatever
+    |player 1 -> 4844 | player 2 -> 4893 | Draws -> 263 |
